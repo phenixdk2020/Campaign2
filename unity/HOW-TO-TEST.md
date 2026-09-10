@@ -1,30 +1,23 @@
-# campaign-map v00.00.02-atlas — test nu
+# Version og test
 
-Stilen er **staff-map / Grand Tactician-bord / HOI terrain-mode**, ikke satellit og ikke den gamle UNIFIED-DEM.
+## Du er ikke på atlas endnu
 
-## Fil
+Hvis Game-view øverst siger `v00.00.18 UNIFIED DENMARK` og Stockholm sidder på Aarhus, kører den gamle scene. `TheaterAtlasBootstrap` er ikke i Play.
 
-`unity/TheaterAtlasBootstrap.cs`
+## Flyt versionen længere ned — nu
 
-Samme `Assets/Resources/CampaignMap/rings.txt` som v00.00.01.
+1. Kopiér `CampaignVersionHud.cs` til `Assets/Scripts/`
+2. Add Component på et tomt objekt i den scene du allerede bruger
+3. Play
 
-## I Unity
+Linjen tegnes ved **y = 72** (under Unity-værktøjslinjen). Feltet `offsetFromTop` kan skrues op hvis den stadig dækker Pause-knapperne.
 
-1. Behold `rings.txt` i `Assets/Resources/CampaignMap/`
-2. Kopiér `TheaterAtlasBootstrap.cs` til `Assets/Scripts/`
-3. Fjern eller slå `TheaterSilhouetteBootstrap` fra
-4. Tom GameObject → Add Component `TheaterAtlasBootstrap`
-5. Play
+- Gul: `v00.00.18 UNIFIED — atlas kører IKKE`
+- Pergament: `v00.00.03 ATLAS`
 
-Forventet console:
-`[campaign-map v00.00.02-atlas] Parchment/ink Denmark.`
+## Atlas (når du vil se den nye stil)
 
-## Hvad der er nyt
-
-- Pergament-land, blæk-vand, mørk kystlinje
-- Lav bord-relief (ingen fake bjerge)
-- Ingen Stockholm / Åbo
-- Kamera mere HOI-skråt
-- Byer kun i teatret
-
-Det er stadig en prototype-shader, ikke GT's håndmalede tiles.
+1. `rings.txt` i `Assets/Resources/CampaignMap/`
+2. `TheaterAtlasBootstrap.cs` på et objekt i scenen
+3. Slå UNIFIED-meshen fra
+4. Play — pergamentkort + linjen skifter til ATLAS
