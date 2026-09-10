@@ -1,11 +1,20 @@
-# Campaign2
+# strategy-campaign2
 
-Arbejdskanal for **PROJECT 1864** kampagnekortet — 3D-relief over teatret, ikke battle-prototypen.
+Arbejdskanal for **PROJECT 1864** kampagnekortet.
 
-Aktiv Unity-kamp ligger i [phenixdk2020/Strategy](https://github.com/phenixdk2020/Strategy).  
-Officer AI (P0A v00.00.09) røres ikke her.
+## Test nu — v00.00.01 silhouette
 
-## Dokumenter
+Der ligger en Play-klar silhuet i `unity/`.
 
-- [docs/B-190-CAMPAIGN-RELIEF-MAP.md](docs/B-190-CAMPAIGN-RELIEF-MAP.md) — forslag til 3D-hovedkort
-- [docs/TILE-00-SONDERJYLLAND.md](docs/TILE-00-SONDERJYLLAND.md) — første tile-scope
+- [unity/HOW-TO-TEST.md](unity/HOW-TO-TEST.md)
+- [unity/TheaterSilhouetteBootstrap.cs](unity/TheaterSilhouetteBootstrap.cs)
+- [unity/Resources/CampaignMap/rings.txt](unity/Resources/CampaignMap/rings.txt)
+
+Kopiér de to filer ind i dit campaign2 Unity-projekt og tryk Play. Den gamle UNIFIED DENMARK-mesh skal slukkes.
+
+Officer AI og P0A ligger i [phenixdk2020/Strategy](https://github.com/phenixdk2020/Strategy).
+
+## Design
+
+- [docs/B-190-CAMPAIGN-RELIEF-MAP.md](docs/B-190-CAMPAIGN-RELIEF-MAP.md)
+- [docs/TILE-00-SONDERJYLLAND.md](docs/TILE-00-SONDERJYLLAND.md)
