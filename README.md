@@ -2,17 +2,16 @@
 
 Arbejdskanal for **PROJECT 1864** kampagnekortet.
 
-## Test nu — v00.00.01 silhouette
+## Test nu — v00.00.02 atlas
 
-Der ligger en Play-klar silhuet i `unity/`.
+Staff-map / Grand Tactician-bord / HOI terrain-look. Ikke satellit. Ikke UNIFIED-DEM.
 
 - [unity/HOW-TO-TEST.md](unity/HOW-TO-TEST.md)
-- [unity/TheaterSilhouetteBootstrap.cs](unity/TheaterSilhouetteBootstrap.cs)
+- [unity/TheaterAtlasBootstrap.cs](unity/TheaterAtlasBootstrap.cs) **← ny version**
+- [unity/TheaterSilhouetteBootstrap.cs](unity/TheaterSilhouetteBootstrap.cs) (v00.00.01)
 - [unity/Resources/CampaignMap/rings.txt](unity/Resources/CampaignMap/rings.txt)
 
-Kopiér de to filer ind i dit campaign2 Unity-projekt og tryk Play. Den gamle UNIFIED DENMARK-mesh skal slukkes.
-
-Officer AI og P0A ligger i [phenixdk2020/Strategy](https://github.com/phenixdk2020/Strategy).
+Kopiér atlas-scriptet ind, slå den gamle UNIFIED-mesh og v01-silhuetten fra, Play.
 
 ## Design
 
